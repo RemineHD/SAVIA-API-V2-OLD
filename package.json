@@ -1,0 +1,26 @@
+{
+  "name": "api-v2",
+  "version": "2.0.0",
+  "description": "Savia Network API version 2.0.0b",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir build",
+    "dev": "nodemon src/index.js --exec babel-node",
+    "start": "node build/index.js"
+  },
+  "author": "Zaroz Studios",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/node": "^7.14.9",
+    "@babel/preset-env": "^7.15.0",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.13.5",
+    "morgan": "^1.10.0",
+    "uuid": "^8.3.2"
+  }
+}
